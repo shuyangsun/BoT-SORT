@@ -39,7 +39,6 @@ class MixConcatDataset(torchConcatDataset):
             self.input_dim = self.datasets[0].input_dim
 
     def __getitem__(self, index):
-
         if not isinstance(index, int):
             idx = index[1]
         if idx < 0:
@@ -60,7 +59,7 @@ class MixConcatDataset(torchConcatDataset):
 
 
 class Dataset(torchDataset):
-    """ This class is a subclass of the base :class:`torch.utils.data.Dataset`,
+    """This class is a subclass of the base :class:`torch.utils.data.Dataset`,
     that enables on the fly resizing of the ``input_dim``.
 
     Args:
