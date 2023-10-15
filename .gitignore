@@ -2,7 +2,8 @@
 /YOLOX_outputs/
 /runs/
 /build
-/.idea/
+.vscode
+.idea/
 *.pyc
 /tools/private
 wandb/
@@ -10,3 +11,6 @@ wandb/
 fast_reid/datasets/MOT17-ReID
 */__pycache__
 *.so
+.venv
+.env
+.DS_Store
